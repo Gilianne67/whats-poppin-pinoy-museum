@@ -91,7 +91,9 @@
   margin-bottom: 0.85rem;
 }
 
-.exhibit-detail .image-placeholder {
+.exhibit-detail .image-placeholder,
+.exhibit-detail .media-figure,
+.exhibit-detail .media-video {
   margin-bottom: 1rem;
 }
 

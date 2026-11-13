@@ -46,6 +46,10 @@
   background: linear-gradient(180deg, var(--orange), var(--purple-bright));
 }
 
+.future-card .media-figure {
+  margin: 0 0 0.9rem;
+}
+
 .future-card__icon {
   font-size: 1.4rem;
   color: var(--orange-deep);

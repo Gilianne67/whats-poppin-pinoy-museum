@@ -1,4 +1,6 @@
 import ImagePlaceholder from './ImagePlaceholder';
+import MediaFigure from './MediaFigure';
+import { getMediaList } from '../data/media';
 import './ExhibitCard.css';
 
 const eraBadgeClass = {
@@ -22,7 +24,15 @@ export default function ExhibitCard({ exhibit, accent, onOpen }) {
         onClick={() => onOpen(exhibit)}
         aria-label={`Open exhibit: ${exhibit.title}`}
       >
-        <ImagePlaceholder label={exhibit.imageLabel} accent={accent} />
+        {exhibit.mediaIds?.length ? (
+          <MediaFigure
+            items={getMediaList(exhibit.mediaIds)}
+            accent={accent}
+            variant="compact"
+          />
+        ) : (
+          <ImagePlaceholder label={exhibit.imageLabel} accent={accent} />
+        )}
         <div className="exhibit-card__body">
           <div className="exhibit-card__meta">
             <span className={`badge ${eraBadgeClass[exhibit.era]}`}>

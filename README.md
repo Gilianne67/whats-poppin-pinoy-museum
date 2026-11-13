@@ -39,5 +39,5 @@ npm run preview
 ## Notes
 
 - **2030** exhibit text is labeled as projection / speculative.
-- Image areas use clearly labeled placeholders when verified images are unavailable.
+- Exhibit photographs are local files in `public/images`, with captions, alt text, and Wikimedia Commons attribution. A labeled stand-in appears if a file fails to load. Official YouTube embeds do not autoplay.
 - References list real, citable framings without fabricated URLs or DOIs.

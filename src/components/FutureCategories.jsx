@@ -1,4 +1,6 @@
 import { futureCategories, futureIntro } from '../data/future';
+import { getMediaList } from '../data/media';
+import MediaFigure from './MediaFigure';
 import './FutureCategories.css';
 
 export default function FutureCategories() {
@@ -17,6 +19,9 @@ export default function FutureCategories() {
       <div className="future__grid section-shell">
         {futureCategories.map((category) => (
           <article key={category.id} className="future-card" id={category.id}>
+            {category.mediaIds?.length ? (
+              <MediaFigure items={getMediaList(category.mediaIds)} variant="full" />
+            ) : null}
             <div className="future-card__icon" aria-hidden="true">
               {category.icon}
             </div>

@@ -16,7 +16,8 @@ export default function HomePage() {
         </p>
         <p>
           Move through three galleries, a six-category future wing, a timeline, and a closing
-          reflection. Exhibit images use labeled placeholders when verified assets are not available.
+          reflection. Photographs are stored with the site, with captions and license lines.
+          A labeled stand-in appears only if a file fails to load.
         </p>
       </section>
 

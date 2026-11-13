@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react';
 import { museumMeta } from '../data/exhibits';
 import ExhibitCard from './ExhibitCard';
 import ImagePlaceholder from './ImagePlaceholder';
+import MediaFigure, { MediaVideo } from './MediaFigure';
+import { getMediaList, getVideo } from '../data/media';
 import Modal from './Modal';
 import './Gallery.css';
 
@@ -111,7 +113,16 @@ export default function Gallery({ gallery, exhibits }) {
                 <span className="badge badge--future">Projection</span>
               ) : null}
             </div>
-            <ImagePlaceholder label={active.imageLabel} accent={gallery.accent} />
+            {active.mediaIds?.length ? (
+              <MediaFigure
+                key={active.id}
+                items={getMediaList(active.mediaIds)}
+                accent={gallery.accent}
+              />
+            ) : (
+              <ImagePlaceholder label={active.imageLabel} accent={gallery.accent} />
+            )}
+            <MediaVideo video={getVideo(active.videoId)} />
             <p className="exhibit-detail__summary">{active.summary}</p>
             <p>{active.description}</p>
             <ul className="exhibit-detail__tags">

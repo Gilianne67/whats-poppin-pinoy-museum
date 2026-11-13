@@ -21,6 +21,7 @@ export const futureCategories = [
       'Projection: fan communities and kinship networks may remain highly organized across platforms, while debates over digital wellbeing, misinformation, and intergenerational media habits grow louder. Communal viewing and shared accounts could persist where access is uneven.',
     continuity:
       'Continues SMS voting circles, barangay TV habits, and diaspora group chats from earlier eras.',
+    mediaIds: ['blackpink-community'],
   },
   {
     id: 'economic',
@@ -32,6 +33,7 @@ export const futureCategories = [
       'Projection: more creators and performers may stitch income from livestreams, brand partnerships, touring, and platform funds — alongside traditional media jobs. Questions about fair pay, IP ownership, and algorithm dependence are likely to stay central.',
     continuity:
       'Extends talent-search economies and OFW remittance-supported media consumption into creator-platform markets.',
+    mediaIds: ['ring-light'],
   },
   {
     id: 'political',
