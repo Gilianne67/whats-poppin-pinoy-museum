@@ -1,0 +1,74 @@
+.home-intro {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.home-intro h2,
+.home-wings h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+
+.home-intro p {
+  max-width: 40rem;
+  color: var(--text-muted);
+}
+
+.home-wings {
+  padding-bottom: var(--space-2xl);
+}
+
+.home-wings__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.home-wing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 9.5rem;
+  padding: 1.15rem 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, rgba(255, 248, 240, 0.92), rgba(245, 230, 211, 0.75));
+  border: 1px solid rgba(90, 24, 154, 0.15);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.home-wing:hover,
+.home-wing:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+  color: inherit;
+}
+
+.home-wing--future {
+  background:
+    linear-gradient(145deg, rgba(90, 24, 154, 0.12), rgba(232, 93, 4, 0.12));
+}
+
+.home-wing__label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.home-wing__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.home-wing__tag {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}

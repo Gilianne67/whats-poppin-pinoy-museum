@@ -1,0 +1,35 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__main {
+  flex: 1;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 1.75rem 0;
+  background: var(--ink);
+  color: rgba(255, 248, 240, 0.78);
+  border-top: 3px solid var(--orange);
+}
+
+.site-footer__inner {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.site-footer__brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.site-footer__note {
+  margin: 0;
+  font-size: 0.9rem;
+  max-width: 40rem;
+}

@@ -1,0 +1,76 @@
+.image-placeholder {
+  position: relative;
+  margin: 0;
+  min-height: 12rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid rgba(26, 15, 46, 0.12);
+  background:
+    linear-gradient(135deg, rgba(245, 230, 211, 0.9), rgba(232, 93, 4, 0.18) 50%, rgba(90, 24, 154, 0.22));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.image-placeholder--tech {
+  background:
+    linear-gradient(145deg, #2d1b4e 0%, #5a189a 40%, #e85d04 100%);
+}
+
+.image-placeholder--perf {
+  background:
+    linear-gradient(160deg, #c44902 0%, #f48c06 45%, #7b2cbf 100%);
+}
+
+.image-placeholder--global {
+  background:
+    linear-gradient(120deg, #3c096c 0%, #e85d04 55%, #f5e6d3 100%);
+}
+
+.image-placeholder__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 248, 240, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 248, 240, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.image-placeholder__chrome {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  z-index: 1;
+}
+
+.image-placeholder__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: rgba(255, 248, 240, 0.75);
+}
+
+.image-placeholder__bar {
+  width: 3.5rem;
+  height: 0.35rem;
+  margin-left: 0.35rem;
+  border-radius: 999px;
+  background: rgba(255, 248, 240, 0.35);
+}
+
+.image-placeholder__caption {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: rgba(26, 15, 46, 0.78);
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
