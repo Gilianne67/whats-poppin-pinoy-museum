@@ -1,0 +1,55 @@
+.conclusion__panel {
+  max-width: 44rem;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(155deg, rgba(26, 15, 46, 0.94), rgba(60, 9, 108, 0.92) 55%, rgba(196, 73, 2, 0.85));
+  color: rgba(255, 248, 240, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.conclusion__panel .gallery__kicker {
+  color: var(--orange-hot);
+}
+
+.conclusion__panel h1 {
+  margin: 0 0 0.5rem;
+  color: var(--cream);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.conclusion__lead {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.conclusion__takeaway {
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+  border-left: 4px solid var(--orange-hot);
+  background: rgba(255, 248, 240, 0.08);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.conclusion__takeaway p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--cream);
+}
+
+.conclusion__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.conclusion__ghost {
+  border-color: rgba(245, 230, 211, 0.45);
+  color: var(--cream);
+}
+
+.conclusion__ghost:hover {
+  color: var(--cream);
+}

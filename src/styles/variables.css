@@ -1,0 +1,41 @@
+:root {
+  /* Brand palette — warm orange, purple, cream (intentional museum identity) */
+  --cream: #fff8f0;
+  --cream-deep: #f5e6d3;
+  --cream-muted: #e8d5bc;
+  --orange: #e85d04;
+  --orange-hot: #f48c06;
+  --orange-deep: #c44902;
+  --purple: #5a189a;
+  --purple-bright: #7b2cbf;
+  --purple-deep: #3c096c;
+  --ink: #1a0f2e;
+  --ink-soft: #2d1b4e;
+  --text: #241536;
+  --text-muted: #5c4a6e;
+  --white: #ffffff;
+  --focus: #f48c06;
+  --success-future: #9b5de5;
+
+  --font-display: 'Syne', 'Segoe UI', sans-serif;
+  --font-body: 'Figtree', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --space-xs: 0.35rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5.5rem;
+
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+
+  --shadow-soft: 0 12px 40px rgba(26, 15, 46, 0.18);
+  --shadow-glow: 0 0 40px rgba(232, 93, 4, 0.25);
+
+  --nav-height: 4.25rem;
+  --max-width: 72rem;
+  --transition: 180ms ease;
+}
